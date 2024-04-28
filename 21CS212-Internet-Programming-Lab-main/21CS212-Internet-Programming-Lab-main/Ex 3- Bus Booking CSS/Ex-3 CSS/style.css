@@ -1,0 +1,92 @@
+:root{
+    --bg: #FDF5F6;
+    --primary: #D73146;
+    --secondary: #A3EA92;
+    --accent: #60E094;
+    --text: #1C0508;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost';
+}
+
+#title
+{
+    color: var(--primary);
+    text-align: center;
+}
+
+#login
+{
+    background-color: var(--accent);
+    padding: 12px 22px;
+    color: var(--text);
+    text-decoration: none;
+    position: absolute;
+    top: 4px;
+    left: 87%;
+    border-radius: 2px;
+    transition: all 1s;
+}
+
+#login:hover
+{
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 6px 8px 3rem var(--accent);
+}
+
+.container{
+    margin: 12px;
+    display: flex;
+    gap: 1rem;
+}
+
+.sleeper, .seater, .semisleeper{
+    padding: 8px;
+    border-radius: 12px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--secondary);
+    gap: 18px;
+    padding: 24px;
+}
+
+.about{
+    margin: 24px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.about-img{
+    width: 90px;
+    border-radius: 24px;
+}
+
+.btn{
+    background-color: var(--accent);
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 6px 8px 3rem var(--accent);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 25%;
+    visibility: hidden;
+}
+
+label{
+    margin-top: 12px;
+}
